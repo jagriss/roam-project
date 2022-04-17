@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head th:replace="fragments :: head"></head>
+
+<body>
+<nav th:replace="fragments :: navigation"></nav>
+
+<div class="container">
+    <div class="body">
+
+        <h1 class="my-3">Delete Wish</h1>
+
+        <hr>
+
+        <form method="post">
+            <th:block th:each="wishlist : ${wishlists}">
+                <div class="my-2 fs-5">
+                    <label>
+                        <input type="checkbox" name="wishlistsIds" th:value="${wishlist.id}">
+                        <span th:text="${wishlist.name}"></span>
+                    </label>
+                </div>
+            </th:block>
+
+            <div class="my-3">
+                <input type="submit" value="Delete" class="btn btn-danger">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

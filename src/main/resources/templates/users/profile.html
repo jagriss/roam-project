@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+
+<body>
+<nav th:replace="fragments :: navigation"></nav>
+
+<div class="container">
+    <div class="body">
+
+        <section class="section">
+            <h1 class="title fst-italic text-center mt-3" th:text="${profileOwner.username}"></h1>
+            <h2 class="subtitle fw-bold text-center">
+                All your travels in one place!
+            </h2>
+            <hr>
+            <div class="text-center mt-3">
+                <a class="button is-primary" th:href="@{/places/create}">Add a travel</a>
+                <a class="button is-primary" th:href="@{/wishlist/create}">Add to your wishlist</a>
+            </div>
+        </section>
+
+    </div>
+</div>
+</body>
+</html>
