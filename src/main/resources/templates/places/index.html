@@ -24,11 +24,10 @@
         <p class="lead" th:unless="${places} and ${places.size()}">No Travels!</p>
 
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-
-                    <div id="accordion">
-                        <th:block th:each="place : ${places}">
+            <div id="accordion">
+                <div class="row">
+                    <th:block th:each="place : ${places}">
+                        <div class="col-4">
 
                             <div id="hiddenId" th:text="${place.id}"></div>
 
@@ -83,9 +82,9 @@
                                     </div>
                                 </label>
                             </div>
-                        </th:block>
-                    </div>
 
+                        </div>
+                    </th:block>
                 </div>
             </div>
         </div>
