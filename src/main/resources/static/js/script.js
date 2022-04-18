@@ -1,8 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-        let hidePlacesID = document.getElementById("hiddenId");
-        hidePlacesID.style.visibility = 'hidden';
+        let hideID = document.getElementById("hiddenId");
+        hideID.style.visibility = 'hidden';
 
 //        const image_input = document.querySelector("#image_input");
 //        const uploaded_image = "";
