@@ -41,7 +41,7 @@ public class PlacesController {
             return "places/create";
         }
         placesRepository.save(newPlaces);
-        return "redirect:"; //updates places list
+        return "redirect:/places"; //updates places list
     }
 
     //check delete function
@@ -60,6 +60,6 @@ public class PlacesController {
                 placesRepository.deleteById(id);
             }
         }
-        return "redirect:";
+        return "redirect:/places";
     }
 }

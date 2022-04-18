@@ -42,7 +42,7 @@ public class WishListController {
             return "wishList/create";
         }
         wishListRepository.save(newWishlist);
-        return "redirect:"; //updates places list
+        return "redirect:/wishList"; //updates places list
     }
 
     //check delete function
@@ -61,6 +61,6 @@ public class WishListController {
                 wishListRepository.deleteById(id);
             }
         }
-        return "redirect:";
+        return "redirect:/wishlist";
     }
 }
