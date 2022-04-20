@@ -2,7 +2,7 @@
 
 https://roamwithme.herokuapp.com/
 
-Roam is a web application for saving and sharing travels. It was built with Spring MVC, thymeleaf, Bootstrap, hibernate, and MySQL.
+Roam is a web application for tracking your travels. It was built with Spring MVC, thymeleaf, Bootstrap, hibernate, and MySQL.
 
 ## Goals
 Create a way for people to track and remember their travels. Users can keep a log just for themselves or to share with other users as a virtual scrapbook.
