@@ -90,7 +90,7 @@ public class AuthenticationController {
         model.addAttribute("title", "Log In");
         return "login";
     }
-
+    //process login and deal with errors
     @PostMapping("/login")
     public String processLoginForm(@ModelAttribute @Valid LoginFormDTO loginFormDTO,
                                    Errors errors, HttpServletRequest request,
